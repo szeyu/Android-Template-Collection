@@ -17,6 +17,7 @@ com.template
 │ ├── adapter # CustomAdapter.java
 │ ├── holder # CustomViewHolder.java
 │ ├── navigation # CustomBottomNavigation.java, CustomSideMenu.java
+│ ├── viewmodel # CustomViewModel.java
 │ └── components # CustomInfoButton.java
 ├── util # CustomUtility.java, CustomNavigationUtil.java
 └── MainApplication.java
@@ -24,76 +25,37 @@ com.template
 
 ## 📁 Templates Overview
 
-### CustomAdapter.java
-A reusable RecyclerView adapter template with ViewHolder pattern implementation. Includes:
-- Click listener interface
-- Data binding functionality
-- List management methods
+| Template | Description | Location |
+|----------|-------------|----------|
+| [CustomAdapter.java](CodeTemplates/CustomAdapter.java) | RecyclerView adapter template with ViewHolder pattern implementation. Features: click listener interface, data binding functionality, list management methods | `ui/adapter` |
+| [CustomBottomNavigation.java](CodeTemplates/CustomBottomNavigation.java) | Material Design bottom navigation implementation with pre-configured listener and customizable menu items | `ui/navigation` |
+| [CustomDAO.java](CodeTemplates/CustomDAO.java) | Room Database DAO interface template with CRUD operations, LiveData support, and ordered queries | `data/dao` |
+| [CustomDatabase.java](CodeTemplates/CustomDatabase.java) | Room Database singleton template with instance management and migration handling | `data/database` |
+| [CustomInfoButton.java](CodeTemplates/CustomInfoButton.java) | Custom ImageButton implementation with Material Design integration and click handling | `ui/components` |
+| [CustomModel.java](CodeTemplates/CustomModel.java) | Room Entity model template with basic data structure and primary key configuration | `model` |
+| [CustomNavigationUtil.java](CodeTemplates/CustomNavigationUtil.java) | Navigation utility class for activity navigation and intent management | `util` |
+| [CustomRepository.java](CodeTemplates/CustomRepository.java) | Repository pattern implementation with ExecutorService and LiveData management | `data/repository` |
+| [CustomSideMenu.java](CodeTemplates/CustomSideMenu.java) | Navigation drawer implementation with Material Design NavigationView | `ui/navigation` |
+| [CustomUtility.java](CodeTemplates/CustomUtility.java) | General utility class template with static helper methods | `util` |
+| [CustomViewHolder.java](CodeTemplates/CustomViewHolder.java) | RecyclerView ViewHolder template with view and data binding methods | `ui/holder` |
+| [CustomViewModel.java](CodeTemplates/CustomViewModel.java) | AndroidViewModel implementation with repository integration and CRUD operations | `ui/viewmodel` |
 
-### CustomBottomNavigation.java
-Bottom navigation implementation using Material Design components:
-- Easy to integrate bottom navigation bar
-- Pre-configured navigation listener
-- Customizable menu items
+## Template Configurations
 
-### CustomDAO.java
-Room Database DAO (Data Access Object) interface template:
-- Basic CRUD operations
-- LiveData support
-- Ordered query example
-
-### CustomDatabase.java
-Room Database singleton template:
-- Database instance management
-- Builder pattern implementation
-- Migration handling
-
-### CustomInfoButton.java
-Custom ImageButton implementation:
-- Material Design integration
-- Click handling
-- Customizable appearance
-
-### CustomModel.java
-Room Entity model template:
-- Basic data structure
-- Primary key configuration
-- Common field examples
-
-### CustomNavigationUtil.java
-Navigation utility class:
-- Activity navigation helpers
-- Intent management
-- Static utility methods
-
-### CustomRepository.java
-Repository pattern implementation:
-- AsyncTask handling with ExecutorService
-- LiveData management
-- DAO integration
-
-### CustomSideMenu.java
-Navigation drawer implementation:
-- Material Design NavigationView
-- Drawer layout configuration
-- Menu item handling
-
-### CustomUtility.java
-General utility class template:
-- Static helper methods
-- Utility function structure
-
-### CustomViewHolder.java
-RecyclerView ViewHolder template:
-- View binding
-- Data binding methods
-- Component initialization
-
-### CustomViewModel.java
-AndroidViewModel implementation:
-- Repository integration
-- LiveData management
-- CRUD operation handling
+| Template Name | File Name | Extension | Source File |
+|--------------|-----------|-----------|-------------|
+| Custom Android Adapter | Custom${NAME}Adapter | java | [CustomAdapter.java](CodeTemplates/CustomAdapter.java) |
+| Custom Bottom Navigation | Custom${NAME}BottomNavigation | java | [CustomBottomNavigation.java](CodeTemplates/CustomBottomNavigation.java) |
+| Custom Room DAO | Custom${NAME}DAO | java | [CustomDAO.java](CodeTemplates/CustomDAO.java) |
+| Custom Room Database | Custom${NAME}Database | java | [CustomDatabase.java](CodeTemplates/CustomDatabase.java) |
+| Custom Info Button | Custom${NAME}InfoButton | java | [CustomInfoButton.java](CodeTemplates/CustomInfoButton.java) |
+| Custom Data Model | Custom${NAME}Model | java | [CustomModel.java](CodeTemplates/CustomModel.java) |
+| Custom Navigation Utility | Custom${NAME}NavigationUtil | java | [CustomNavigationUtil.java](CodeTemplates/CustomNavigationUtil.java) |
+| Custom Repository | Custom${NAME}Repository | java | [CustomRepository.java](CodeTemplates/CustomRepository.java) |
+| Custom Side Menu | Custom${NAME}SideMenu | java | [CustomSideMenu.java](CodeTemplates/CustomSideMenu.java) |
+| Custom Utility | Custom${NAME}Utility | java | [CustomUtility.java](CodeTemplates/CustomUtility.java) |
+| Custom ViewHolder | Custom${NAME}ViewHolder | java | [CustomViewHolder.java](CodeTemplates/CustomViewHolder.java) |
+| Custom ViewModel | Custom${NAME}ViewModel | java | [CustomViewModel.java](CodeTemplates/CustomViewModel.java) |
 
 ## 🚀 How to Use
 
@@ -104,80 +66,6 @@ AndroidViewModel implementation:
 3. Navigate to `Editor > File and Code Templates`
 4. Click the `+` icon to create a new template
 5. For each template below, create a new entry with the specified Name and File Name
-
-### Template Configurations
-
-#### Adapter Template
-- **Name:** Custom Android Adapter
-- **File name:** Custom${NAME}Adapter
-- **Extension:** java
-- Copy content from `CustomAdapter.java`
-
-#### Bottom Navigation Template
-- **Name:** Custom Bottom Navigation
-- **File name:** Custom${NAME}BottomNavigation
-- **Extension:** java
-- Copy content from `CustomBottomNavigation.java`
-
-#### DAO Template
-- **Name:** Custom Room DAO
-- **File name:** Custom${NAME}DAO
-- **Extension:** java
-- Copy content from `CustomDAO.java`
-
-#### Database Template
-- **Name:** Custom Room Database
-- **File name:** Custom${NAME}Database
-- **Extension:** java
-- Copy content from `CustomDatabase.java`
-
-#### Info Button Template
-- **Name:** Custom Info Button
-- **File name:** Custom${NAME}InfoButton
-- **Extension:** java
-- Copy content from `CustomInfoButton.java`
-
-#### Model Template
-- **Name:** Custom Data Model
-- **File name:** Custom${NAME}Model
-- **Extension:** java
-- Copy content from `CustomModel.java`
-
-#### Navigation Utility Template
-- **Name:** Custom Navigation Utility
-- **File name:** Custom${NAME}NavigationUtil
-- **Extension:** java
-- Copy content from `CustomNavigationUtil.java`
-
-#### Repository Template
-- **Name:** Custom Repository
-- **File name:** Custom${NAME}Repository
-- **Extension:** java
-- Copy content from `CustomRepository.java`
-
-#### Side Menu Template
-- **Name:** Custom Side Menu
-- **File name:** Custom${NAME}SideMenu
-- **Extension:** java
-- Copy content from `CustomSideMenu.java`
-
-#### Utility Template
-- **Name:** Custom Utility
-- **File name:** Custom${NAME}Utility
-- **Extension:** java
-- Copy content from `CustomUtility.java`
-
-#### ViewHolder Template
-- **Name:** Custom ViewHolder
-- **File name:** Custom${NAME}ViewHolder
-- **Extension:** java
-- Copy content from `CustomViewHolder.java`
-
-#### ViewModel Template
-- **Name:** Custom ViewModel
-- **File name:** Custom${NAME}ViewModel
-- **Extension:** java
-- Copy content from `CustomViewModel.java`
 
 ### Using the Templates
 
