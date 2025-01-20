@@ -2,60 +2,73 @@
 
 A collection of commonly used Android templates to accelerate development workflow. Each template is designed to be modular and easily integrated into your Android projects.
 
-## 📁 Project Structure and Template Placement
+## 📁 Project Structure
 
 ```
-com.template
-├── data
-│ ├── dao # CustomDAO.java
-│ ├── database # CustomDatabase.java
-│ └── repository # CustomRepository.java
-├── model # CustomModel.java
-├── ui
-│ ├── activities
-│ ├── fragments
-│ ├── adapter # CustomAdapter.java
-│ ├── holder # CustomViewHolder.java
-│ ├── navigation # CustomBottomNavigation.java, CustomSideMenu.java
-│ ├── viewmodel # CustomViewModel.java
-│ └── components # CustomInfoButton.java
-├── util # CustomUtility.java, CustomNavigationUtil.java
-└── MainApplication.java
+CodeTemplates/
+├── java/
+│ ├── data/
+│ │ ├── dao/ # Data Access Objects
+│ │ ├── database/ # Room Database
+│ │ └── repository/ # Data Repositories
+│ ├── model/ # Data Models
+│ ├── ui/
+│ │ ├── adapter/ # RecyclerView Adapters
+│ │ ├── components/ # Custom UI Components
+│ │ ├── holder/ # ViewHolders
+│ │ ├── navigation/ # Navigation Components
+│ │ └── viewmodel/ # ViewModels
+│ └── util/ # Utility Classes
+└── res/
+├── layout/ # Layout Templates
+├── menu/ # Menu Resources
+└── values/ # Style Resources
 ```
 
-## 📁 Templates Overview
+## 📁 Java Templates Overview
 
 | Template | Description | Location |
 |----------|-------------|----------|
-| [CustomAdapter.java](CodeTemplates/CustomAdapter.java) | RecyclerView adapter template with ViewHolder pattern implementation. Features: click listener interface, data binding functionality, list management methods | `ui/adapter` |
-| [CustomBottomNavigation.java](CodeTemplates/CustomBottomNavigation.java) | Material Design bottom navigation implementation with pre-configured listener and customizable menu items | `ui/navigation` |
-| [CustomDAO.java](CodeTemplates/CustomDAO.java) | Room Database DAO interface template with CRUD operations, LiveData support, and ordered queries | `data/dao` |
-| [CustomDatabase.java](CodeTemplates/CustomDatabase.java) | Room Database singleton template with instance management and migration handling | `data/database` |
-| [CustomInfoButton.java](CodeTemplates/CustomInfoButton.java) | Custom ImageButton implementation with Material Design integration and click handling | `ui/components` |
-| [CustomModel.java](CodeTemplates/CustomModel.java) | Room Entity model template with basic data structure and primary key configuration | `model` |
-| [CustomNavigationUtil.java](CodeTemplates/CustomNavigationUtil.java) | Navigation utility class for activity navigation and intent management | `util` |
-| [CustomRepository.java](CodeTemplates/CustomRepository.java) | Repository pattern implementation with ExecutorService and LiveData management | `data/repository` |
-| [CustomSideMenu.java](CodeTemplates/CustomSideMenu.java) | Navigation drawer implementation with Material Design NavigationView | `ui/navigation` |
-| [CustomUtility.java](CodeTemplates/CustomUtility.java) | General utility class template with static helper methods | `util` |
-| [CustomViewHolder.java](CodeTemplates/CustomViewHolder.java) | RecyclerView ViewHolder template with view and data binding methods | `ui/holder` |
-| [CustomViewModel.java](CodeTemplates/CustomViewModel.java) | AndroidViewModel implementation with repository integration and CRUD operations | `ui/viewmodel` |
+| [CustomAdapter.java](CodeTemplates/java/ui/adapter/CustomAdapter.java) | RecyclerView adapter template with ViewHolder pattern implementation. Features: click listener interface, data binding functionality, list management methods | `ui/adapter` |
+| [CustomBottomNavigation.java](CodeTemplates/java/ui/navigation/CustomBottomNavigation.java) | Material Design bottom navigation implementation with pre-configured listener and customizable menu items | `ui/navigation` |
+| [CustomDAO.java](CodeTemplates/java/data/dao/CustomDAO.java) | Room Database DAO interface template with CRUD operations, LiveData support, and ordered queries | `data/dao` |
+| [CustomDatabase.java](CodeTemplates/java/data/database/CustomDatabase.java) | Room Database singleton template with instance management and migration handling | `data/database` |
+| [CustomInfoButton.java](CodeTemplates/java/ui/components/CustomInfoButton.java) | Custom ImageButton implementation with Material Design integration and click handling | `ui/components` |
+| [CustomModel.java](CodeTemplates/java/model/CustomModel.java) | Room Entity model template with basic data structure and primary key configuration | `model` |
+| [CustomNavigationUtil.java](CodeTemplates/java/util/CustomNavigationUtil.java) | Navigation utility class for activity navigation and intent management | `util` |
+| [CustomRepository.java](CodeTemplates/java/data/repository/CustomRepository.java) | Repository pattern implementation with ExecutorService and LiveData management | `data/repository` |
+| [CustomSideMenu.java](CodeTemplates/java/ui/navigation/CustomSideMenu.java) | Navigation drawer implementation with Material Design NavigationView | `ui/navigation` |
+| [CustomUtility.java](CodeTemplates/java/util/CustomUtility.java) | General utility class template with static helper methods | `util` |
+| [CustomViewHolder.java](CodeTemplates/java/ui/holder/CustomViewHolder.java) | RecyclerView ViewHolder template with view and data binding methods | `ui/holder` |
+| [CustomViewModel.java](CodeTemplates/java/ui/viewmodel/CustomViewModel.java) | AndroidViewModel implementation with repository integration and CRUD operations | `ui/viewmodel` |
 
-## Template Configurations
+## 📁 XML Templates Overview
 
-| Template Name | File Name | Extension | Source File |
-|--------------|-----------|-----------|-------------|
-| Custom Android Adapter | Custom${NAME}Adapter | java | [CustomAdapter.java](CodeTemplates/CustomAdapter.java) |
-| Custom Bottom Navigation | Custom${NAME}BottomNavigation | java | [CustomBottomNavigation.java](CodeTemplates/CustomBottomNavigation.java) |
-| Custom Room DAO | Custom${NAME}DAO | java | [CustomDAO.java](CodeTemplates/CustomDAO.java) |
-| Custom Room Database | Custom${NAME}Database | java | [CustomDatabase.java](CodeTemplates/CustomDatabase.java) |
-| Custom Info Button | Custom${NAME}InfoButton | java | [CustomInfoButton.java](CodeTemplates/CustomInfoButton.java) |
-| Custom Data Model | Custom${NAME}Model | java | [CustomModel.java](CodeTemplates/CustomModel.java) |
-| Custom Navigation Utility | Custom${NAME}NavigationUtil | java | [CustomNavigationUtil.java](CodeTemplates/CustomNavigationUtil.java) |
-| Custom Repository | Custom${NAME}Repository | java | [CustomRepository.java](CodeTemplates/CustomRepository.java) |
-| Custom Side Menu | Custom${NAME}SideMenu | java | [CustomSideMenu.java](CodeTemplates/CustomSideMenu.java) |
-| Custom Utility | Custom${NAME}Utility | java | [CustomUtility.java](CodeTemplates/CustomUtility.java) |
-| Custom ViewHolder | Custom${NAME}ViewHolder | java | [CustomViewHolder.java](CodeTemplates/CustomViewHolder.java) |
-| Custom ViewModel | Custom${NAME}ViewModel | java | [CustomViewModel.java](CodeTemplates/CustomViewModel.java) |
+### Layouts
+
+| Template | Description |
+|----------|-------------|
+| [custom_login_layout.xml](CodeTemplates/res/layout/custom_login_layout.xml) | Material Design login screen with email and password fields |
+| [custom_bottom_nav_layout.xml](CodeTemplates/res/layout/custom_bottom_nav_layout.xml) | Bottom navigation with fragment container |
+| [custom_side_nav_layout.xml](CodeTemplates/res/layout/custom_side_nav_layout.xml) | Navigation drawer with header and menu |
+| [custom_card_layout.xml](CodeTemplates/res/layout/custom_card_layout.xml) | Material card with image, title, and subtitle |
+| [custom_button_layout.xml](CodeTemplates/res/layout/custom_button_layout.xml) | Collection of Material button styles |
+| [custom_toolbar_layout.xml](CodeTemplates/res/layout/custom_toolbar_layout.xml) | Custom toolbar with title and menu support |
+
+### Menus
+
+| Template | Description |
+|----------|-------------|
+| [custom_bottom_nav_menu.xml](CodeTemplates/res/menu/custom_bottom_nav_menu.xml) | Bottom navigation menu items |
+| [custom_side_nav_menu.xml](CodeTemplates/res/menu/custom_side_nav_menu.xml) | Navigation drawer menu items |
+
+### Values
+
+| Template | Description |
+|----------|-------------|
+| [custom_colors.xml](CodeTemplates/res/values/custom_colors.xml) | Material Design color system |
+| [custom_dimens.xml](CodeTemplates/res/values/custom_dimes.xml) | Standard dimensions and spacing |
+| [custom_styles.xml](CodeTemplates/res/values/custom_styles.xml) | Material component styles |
 
 ## 🚀 How to Use
 
