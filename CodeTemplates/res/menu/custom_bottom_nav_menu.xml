@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sim Sze Yu
+  ~ GitHub: https://github.com/szeyu/Awsome-Android-Code-Template
+  ~
+  ~ This template is part of the WIA2007 Mobile Application Development Course
+  ~ Bachelor of Computer Science (Artificial Intelligence)
+  ~ Universiti Malaya
+  ~
+  ~ Licensed under MIT License
+  ~ Copyright (c) 2025 Sim Sze Yu
+  ~
+  ~ Bottom navigation menu resource template.
+  ~ Features:
+  ~ - Standard navigation items
+  ~ - Icon and label support
+  ~ - Material Design icons
+  ~ - Item ID configuration
+  ~
+  ~ Usage:
+  ~ 1. Customize menu items
+  ~ 2. Add icons
+  ~ 3. Set up navigation IDs
+  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/baseline_space_dashboard_24"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@drawable/baseline_notifications_24"
+        android:title="Notifications" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Profile" />
+</menu>
