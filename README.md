@@ -6,6 +6,7 @@
 [![Java](https://img.shields.io/badge/Language-Java-orange.svg)](https://www.java.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S419B72M)
 
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/android/android.png" width="100" height="100" alt="Android Logo"/>
 
@@ -17,7 +18,8 @@
 [Explore Templates](#-java-templates-overview) • 
 [Quick Start](#-how-to-use) • 
 [Documentation](#-project-structure) • 
-[Contribute](#-contributing)
+[Contribute](#-contributing) • 
+[Support on Ko-fi](https://ko-fi.com/S6S419B72M)
 
 <details>
 <summary>🌟 Key Features</summary>
@@ -192,6 +194,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Bachelor of Computer Science (Artificial Intelligence)  
 Universiti Malaya  
 WIA2007 Mobile Application Development Course
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S419B72M)
 
 ⭐️ **Don't forget to star this repository if you find it helpful!** ⭐️
 
