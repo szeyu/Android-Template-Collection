@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sim Sze Yu
+  ~ GitHub: https://github.com/szeyu/Awsome-Android-Code-Template
+  ~
+  ~ This template is part of the WIA2007 Mobile Application Development Course
+  ~ Bachelor of Computer Science (Artificial Intelligence)
+  ~ Universiti Malaya
+  ~
+  ~ Licensed under MIT License
+  ~ Copyright (c) 2025 Sim Sze Yu
+  ~
+  ~ Material Design login layout template.
+  ~ Features:
+  ~ - Material TextInputLayout for fields
+  ~ - Responsive design
+  ~ - Error handling support
+  ~ - Remember me option
+  ~
+  ~ Usage:
+  ~ 1. Include in your login activity
+  ~ 2. Customize colors and text
+  ~ 3. Add validation logic
+  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_large">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/icon_size_large"
+            android:layout_height="@dimen/icon_size_large"
+            android:layout_marginTop="@dimen/spacing_xlarge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_email"
+            style="@style/Widget.Custom.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xlarge"
+            android:hint="Email"
+            app:layout_constraintTop_toBottomOf="@id/iv_logo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_password"
+            style="@style/Widget.Custom.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:layout_constraintTop_toBottomOf="@id/til_email"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
+            style="@style/Widget.Custom.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:text="Login"
+            app:layout_constraintTop_toBottomOf="@id/til_password" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

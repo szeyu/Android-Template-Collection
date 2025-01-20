@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sim Sze Yu
+  ~ GitHub: https://github.com/szeyu/Awsome-Android-Code-Template
+  ~
+  ~ This template is part of the WIA2007 Mobile Application Development Course
+  ~ Bachelor of Computer Science (Artificial Intelligence)
+  ~ Universiti Malaya
+  ~
+  ~ Licensed under MIT License
+  ~ Copyright (c) 2025 Sim Sze Yu
+  ~
+  ~ Material Design color resource template.
+  ~ Features:
+  ~ - Material Design color system
+  ~ - Primary and secondary colors
+  ~ - Light and dark theme support
+  ~ - Semantic color naming
+  ~
+  ~ Usage:
+  ~ 1. Use in themes and styles
+  ~ 2. Reference in layouts
+  ~ 3. Maintain consistent branding
+  -->
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary">#1976D2</color>
+    <color name="primary_dark">#1565C0</color>
+    <color name="primary_light">#42A5F5</color>
+    
+    <!-- Secondary Colors -->
+    <color name="secondary">#FF4081</color>
+    <color name="secondary_dark">#F50057</color>
+    <color name="secondary_light">#FF80AB</color>
+    
+    <!-- Neutral Colors -->
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#B00020</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#DE000000</color>
+    <color name="text_secondary">#99000000</color>
+    <color name="text_disabled">#61000000</color>
+    <color name="text_light">#FFFFFF</color>
+    
+    <!-- Component Colors -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_stroke">#1F000000</color>
+    <color name="button_disabled">#1F000000</color>
+    <color name="ripple">#33000000</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FFC107</color>
+    <color name="info">#2196F3</color>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sim Sze Yu
+  ~ GitHub: https://github.com/szeyu/Awsome-Android-Code-Template
+  ~
+  ~ This template is part of the WIA2007 Mobile Application Development Course
+  ~ Bachelor of Computer Science (Artificial Intelligence)
+  ~ Universiti Malaya
+  ~
+  ~ Licensed under MIT License
+  ~ Copyright (c) 2025 Sim Sze Yu
+  ~
+  ~ Material Design card layout template.
+  ~ Features:
+  ~ - MaterialCardView implementation
+  ~ - Image support
+  ~ - Title and subtitle areas
+  ~ - Customizable elevation
+  ~
+  ~ Usage:
+  ~ 1. Use in RecyclerView items
+  ~ 2. Customize card appearance
+  ~ 3. Add click behaviors
+  -->
+<com.google.android.material.card.MaterialCardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.Custom.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_card_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/tv_card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:textAppearance="@style/TextAppearance.Custom.Title"
+            app:layout_constraintTop_toBottomOf="@id/iv_card_image"
+            tools:text="Card Title" />
+
+        <TextView
+            android:id="@+id/tv_card_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_medium"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:textAppearance="@style/TextAppearance.Custom.Body"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_card_title"
+            tools:text="Card Subtitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sim Sze Yu
+  ~ GitHub: https://github.com/szeyu/Awsome-Android-Code-Template
+  ~
+  ~ This template is part of the WIA2007 Mobile Application Development Course
+  ~ Bachelor of Computer Science (Artificial Intelligence)
+  ~ Universiti Malaya
+  ~
+  ~ Licensed under MIT License
+  ~ Copyright (c) 2025 Sim Sze Yu
+  ~
+  ~ Navigation drawer layout template.
+  ~ Features:
+  ~ - DrawerLayout implementation
+  ~ - Header view support
+  ~ - Menu grouping
+  ~ - Material Design styling
+  ~
+  ~ Usage:
+  ~ 1. Include in your main activity
+  ~ 2. Set up navigation menu
+  ~ 3. Add header layout if needed
+  -->
+<androidx.drawerlayout.widget.DrawerLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/custom_toolbar_layout" />
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@color/surface"
+        app:itemIconTint="@color/primary"
+        app:itemTextColor="@color/text_primary"
+        app:itemIconSize="@dimen/icon_size_small"
+        app:itemHorizontalPadding="@dimen/spacing_medium"
+        app:menu="@menu/custom_side_nav_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sim Sze Yu
+  ~ GitHub: https://github.com/szeyu/Awsome-Android-Code-Template
+  ~
+  ~ This template is part of the WIA2007 Mobile Application Development Course
+  ~ Bachelor of Computer Science (Artificial Intelligence)
+  ~ Universiti Malaya
+  ~
+  ~ Licensed under MIT License
+  ~ Copyright (c) 2025 Sim Sze Yu
+  ~
+  ~ Material Design styles resource template.
+  ~ Features:
+  ~ - Custom theme attributes
+  ~ - Component styles
+  ~ - Text appearances
+  ~ - Common widget styling
+  ~
+  ~ Usage:
+  ~ 1. Apply styles to themes
+  ~ 2. Use in layouts
+  ~ 3. Customize as needed
+  -->
+<resources>
+    <!-- Text Appearances -->
+    <style name="TextAppearance.Custom.Headline">
+        <item name="android:textSize">@dimen/text_headline</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.Custom.Title">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.Custom.Body">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Widget.Custom.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:padding">@dimen/spacing_medium</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="android:textAppearance">@style/TextAppearance.Custom.Button</item>
+    </style>
+
+    <style name="Widget.Custom.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:padding">@dimen/spacing_medium</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Card Styles -->
+    <style name="Widget.Custom.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="android:layout_margin">@dimen/card_margin</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+    </style>
+
+    <!-- Input Field Styles -->
+    <style name="Widget.Custom.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_height">@dimen/input_height</item>
+        <item name="android:layout_marginTop">@dimen/input_spacing</item>
+        <item name="boxCornerRadiusTopStart">@dimen/button_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/button_corner_radius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/button_corner_radius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/button_corner_radius</item>
+    </style>
+</resources>

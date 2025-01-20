@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sim Sze Yu
+  ~ GitHub: https://github.com/szeyu/Awsome-Android-Code-Template
+  ~
+  ~ This template is part of the WIA2007 Mobile Application Development Course
+  ~ Bachelor of Computer Science (Artificial Intelligence)
+  ~ Universiti Malaya
+  ~
+  ~ Licensed under MIT License
+  ~ Copyright (c) 2025 Sim Sze Yu
+  ~
+  ~ Navigation drawer menu resource template.
+  ~ Features:
+  ~ - Grouped menu items
+  ~ - Submenus support
+  ~ - Icon integration
+  ~ - Checkable items
+  ~
+  ~ Usage:
+  ~ 1. Define menu groups
+  ~ 2. Add menu items
+  ~ 3. Configure icons
+  -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/baseline_space_dashboard_24"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/baseline_notifications_24"
+            android:title="Notifications" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/baseline_settings_24"
+                android:title="Settings" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/baseline_info_24"
+                android:title="About" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/baseline_logout_24"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>
