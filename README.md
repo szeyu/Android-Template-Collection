@@ -124,7 +124,6 @@ CodeTemplates/
 
 When using the templates, you'll need to replace these common variables:
 - `${PACKAGE_NAME}`: Your app's package name
-- `${NAME}`: The name you enter when creating a new file
 - Other template-specific variables will be highlighted when you use the template
 
 ### Tips
