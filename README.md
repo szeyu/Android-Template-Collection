@@ -1,6 +1,39 @@
-# Awsome Android Code Template
+<div align="center">
 
-A collection of commonly used Android templates to accelerate development workflow. Each template is designed to be modular and easily integrated into your Android projects.
+# 📱 Awesome Android Code Template
+
+[![Android](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com)
+[![Java](https://img.shields.io/badge/Language-Java-orange.svg)](https://www.java.com)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/android/android.png" width="100" height="100" alt="Android Logo"/>
+
+🚀 A collection of powerful, ready-to-use Android templates to supercharge your development workflow.  
+⚡️ Modular, customizable, and easily integrated into any Android project.
+
+📦 **Time-Saving Templates** • 🎨 **Clean Architecture** • 🛠 **Best Practices**
+
+[Explore Templates](#-java-templates-overview) • 
+[Quick Start](#-how-to-use) • 
+[Documentation](#-project-structure) • 
+[Contribute](#-contributing)
+
+<details>
+<summary>🌟 Key Features</summary>
+
+- 📐 Modern Architecture Components
+- 🎯 MVVM Design Pattern
+- 🔄 Repository Pattern
+- 🗃️ Room Database Templates
+- 🎨 Material Design Components
+- 🔌 Easy Integration
+
+</details>
+
+---
+
+</div>
 
 ## 📁 Project Structure
 
@@ -149,5 +182,26 @@ Thank you for considering contributing to Awesome-Android-Code-Template!
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+---
+
+<div align="center">
+
+### Created by Sim Sze Yu
+
+Bachelor of Computer Science (Artificial Intelligence)  
+Universiti Malaya  
+WIA2007 Mobile Application Development Course
+
+⭐️ **Don't forget to star this repository if you find it helpful!** ⭐️
+
+[🔱 Fork](https://github.com/szeyu/Awesome-Android-Code-Template/fork) &nbsp;&nbsp;•&nbsp;&nbsp; 
+[🐛 Report Bug](https://github.com/szeyu/Awesome-Android-Code-Template/issues) &nbsp;&nbsp;•&nbsp;&nbsp; 
+[✨ Request Feature](https://github.com/szeyu/Awesome-Android-Code-Template/issues)
+
+</div>
+
+
+
+
