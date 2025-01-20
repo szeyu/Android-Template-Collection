@@ -112,12 +112,12 @@ CodeTemplates/
 3. Navigate to `Editor > File and Code Templates`
 4. Click the `+` icon to create a new template
 5. For each template below, create a new entry with the specified Name and File Name
+6. Click `Enable Live Template` and then click `Apply`
 
 ### Using the Templates
 
 1. Right-click on your desired package in the Project view
-2. Select `New > Other > [Template Name]`
-3. Enter the name for your class (will replace ${NAME} in the file name)
+2. Select `New > [Template Name]`
 4. Click `OK`
 
 ### Template Variables
