@@ -41,73 +41,81 @@
 
 ```
 C:.
-│   LICENSE                 # License file for the project
-│   README.md               # Project documentation
+│   LICENSE                        # License file for the project
+│   README.md                      # Project documentation
 │
-└───CodeTemplates           # Main source directory
-    ├───java                # Java source files
-    │   │   CustomNavigatorMainActivity.java  # Main activity of the application
+└───CodeTemplates                  # Main source directory
+    ├───java                       # Java source files
+    │   │   CustomNavigatorMainActivity.java  # Main activity for the app
     │   │
-    │   ├───data            # Data layer (DAO, Database, Repository)
+    │   ├───data                   # Data layer (DAO, Database, Repository)
     │   │   ├───dao
-    │   │   │       CustomDAO.java           # Data Access Object for database operations
+    │   │   │       CustomDAO.java           # DAO for data operations
     │   │   │
     │   │   ├───database
-    │   │   │       CustomDatabase.java      # Database setup and instance management
+    │   │   │       CustomDatabase.java      # Database setup and management
     │   │   │
     │   │   └───repository
-    │   │           CustomRepository.java    # Handles data operations and business logic
+    │   │           CustomRepository.java    # Repository for data operations
     │   │
-    │   ├───model           # Data models used in the application
-    │   │       CustomModel.java             # Example model class
+    │   ├───model                  # Data models for the application
+    │   │       CustomModel.java             # Example data model class
     │   │
-    │   ├───ui              # UI components of the application
+    │   ├───ui                     # UI components of the app
     │   │   ├───adapter
-    │   │   │       CustomAdapter.java       # Adapter for RecyclerView or ListView
+    │   │   │       CustomAdapter.java       # RecyclerView adapter implementation
     │   │   │
     │   │   ├───components
-    │   │   │       CustomInfoButton.java    # Custom UI component (e.g., button)
+    │   │   │       CustomInfoButton.java    # Custom button component
     │   │   │
     │   │   ├───fragment
-    │   │   │       CustomListFragment.java  # Fragment to display a list of items
+    │   │   │       CustomListFragment.java  # Fragment displaying a list of items
     │   │   │
     │   │   ├───navigation
-    │   │   │       BottomNavigation.java    # Bottom navigation bar implementation
-    │   │   │       SideMenu.java            # Side navigation drawer implementation
+    │   │   │       BottomNavigation.java    # Bottom navigation bar setup
+    │   │   │       SideMenu.java            # Side navigation menu setup
     │   │   │
     │   │   ├───viewHolder
-    │   │   │       CustomViewHolder.java    # ViewHolder for RecyclerView items
+    │   │   │       CustomViewHolder.java    # ViewHolder for RecyclerView
     │   │   │
     │   │   └───viewModel
-    │   │           CustomViewModel.java     # ViewModel for managing UI-related data
+    │   │           CustomEntityViewModel.java # ViewModel managing UI-related data
     │   │
-    │   └───util            # Utility classes
-    │           CustomUtility.java           # General utility functions
-    │           NavigationUtil.java          # Navigation-related utility functions
+    │   └───util                     # Utility classes
+    │           AppStorageUtil.java          # Utilities for app storage
+    │           DiskCacheUtil.java           # Disk cache management
+    │           HybridCacheUtil.java         # Hybrid cache management
+    │           MemoryCacheUtil.java         # Memory cache utilities
+    │           NavigationUtil.java          # Utilities for navigation handling
+    │           PreferenceManagerUtil.java   # Utilities for managing preferences
+    │           SharedPrefsUtil.java         # Shared preferences utilities
     │
-    └───res                 # Resource files (XML layouts, styles, colors)
+    └───res                           # Resources like layouts, styles, and colors
         ├───layout
-        │       custom_bottom_nav_layout.xml     # XML layout for bottom navigation
-        │       custom_button_layout.xml         # XML layout for custom button
-        │       custom_card_layout.xml           # XML layout for custom card UI
-        │       custom_login_layout.xml          # XML layout for login screen
-        │       custom_navigator_main_activity.xml # XML layout for main activity
-        │       custom_side_nav_layout.xml       # XML layout for side navigation menu
-        │       custom_toolbar_layout.xml        # XML layout for toolbar
+        │       custom_bottom_nav_layout.xml   # Layout for bottom navigation
+        │       custom_button_layout.xml       # Layout for custom buttons
+        │       custom_card_layout.xml         # Layout for card views
+        │       custom_list_recycler_view_layout.xml # Layout for RecyclerView lists
+        │       custom_login_layout.xml        # Layout for login screen
+        │       custom_navigator_main_activity.xml  # Layout for the main activity
+        │       custom_side_nav_layout.xml     # Layout for side navigation menu
+        │       custom_toolbar_layout.xml      # Layout for the toolbar
         │
         ├───menu
-        │       custom_bottom_nav_menu.xml       # Menu configuration for bottom navigation
-        │       custom_main_nav_menu.xml         # Main navigation menu configuration
-        │       custom_side_nav_menu.xml         # Side navigation menu configuration
+        │       custom_bottom_nav_menu.xml     # Menu resource for bottom navigation items
+        │       custom_main_nav_menu.xml       # Menu resource for the main navigation menu
+        │       custom_side_nav_menu.xml       # Menu resource for side navigation
         │
         └───values
-                custom_colors.xml                # Color definitions
-                custom_dimes.xml                 # Dimens (sizes and spacing)
-                custom_styles.xml                # Style definitions
+                custom_colors.xml            # Color resources
+                custom_dimes.xml             # Dimens (sizes and spacing)
+                custom_styles.xml            # Styles and themes
 ```
 
 
 ## 📁 Java Templates Overview
+
+## 📂 Java Templates Overview
 
 | Template                                | Description                                                                                                                                                                                 | Location               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
@@ -126,7 +134,8 @@ C:.
 | **CustomUtility.java**                  | General utility class template with static helper methods.                                                                                                                                | `java/util`            |
 | **NavigationUtil.java**                 | Utility class for handling navigation throughout the app. Supports fragment-based navigation via NavController and intent-based navigation methods.                                        | `java/util`            |
 
-## 📁 XML Templates Overview
+
+## 📂 XML Templates Overview
 
 ### Layouts
 

@@ -31,16 +31,16 @@ import androidx.lifecycle.LiveData;
 import java.util.List;
 
 // Replace ${PACKAGE_NAME} with your package name
-// Replace ${VIEW_MODEL_NAME} with your ViewModel class name
+// Replace ${ENTITY_VIEW_MODEL_NAME} with your EntityViewModel class name
 // Replace ${MODEL_NAME} with your data model class name
 // Replace ${REPOSITORY_NAME} with your repository class name
 
-public class ${VIEW_MODEL_NAME} extends AndroidViewModel {
+public class ${ENTITY_VIEW_MODEL_NAME} extends AndroidViewModel {
 
     private final ${REPOSITORY_NAME} repository;
     private final LiveData<List<${MODEL_NAME}>> allItems;
 
-    public ${VIEW_MODEL_NAME}(@NonNull Application application) {
+    public ${ENTITY_VIEW_MODEL_NAME}(@NonNull Application application) {
         super(application);
         repository = new ${REPOSITORY_NAME}(application);
         allItems = repository.getAllItems();
