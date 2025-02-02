@@ -16,7 +16,7 @@
 📦 **Time-Saving Templates** • 🎨 **Clean Architecture** • 🛠 **Best Practices**
 
 [Explore Templates](#-java-templates-overview) • 
-[Quick Start](#-how-to-use) • 
+[Quick Start](#getting-started) •
 [Documentation](#-project-structure) • 
 [Contribute](#-contributing) • 
 [Support on Ko-fi](https://ko-fi.com/S6S419B72M)
@@ -156,17 +156,54 @@ C:.
 | **custom_dimes.xml**       | Standard dimensions and spacing.             |
 | **custom_styles.xml**      | Material component styles and themes.        |
 
+
+## Getting Started
+There are 2 method to create the templates in Android Studio
+1. **Download and Extract the Template Package**
+2. **Manually Add Templates One by One**
+
+---
+
+### Method 1: Download and Extract
+
+1. **Download the Template Package:**
+   - Visit the [releases page](https://github.com/szeyu/Awsome-Android-Code-Template/releases/tag/v1.0).
+   - Download either `fileTemplates.zip` or `fileTemplates.tar`.
+
+2. **Extract the Package:**
+   - Extract the downloaded archive to a location on your computer.
+  
+3. **Import Settings into Android Studio:**
+   - Open **Android Studio**.
+   - Navigate to **File > Manage IDE Settings > Import Settings**.
+   - When prompted, copy the path shown in the dialog.
+   - Open your file explorer, navigate to the copied path, and locate the `fileTemplates` folder.
+   - Copy all files from the `fileTemplates` folder.
+   - Paste the copied files into the folder specified by the Import Settings dialog.
+   - Restart Android Studio if necessary to see the new templates.
+
+---
+
+### Method 2: Add Templates Manually
+
+1. **Open Template Settings:**
+   - Open **Android Studio**.
+   - Navigate to:
+     - **File > Settings** (on Windows/Linux) or
+     - **Android Studio > Preferences** (on macOS).
+
+2. **Access File and Code Templates:**
+   - In the Settings/Preferences window, go to **Editor > File and Code Templates**.
+
+3. **Manually Add Each Template:**
+   - Click the **+** icon to create a new template.
+   - For each template, enter the provided **Name** and **File Name**.
+   - Copy the content from the template files (from the repository or your downloaded package) into the corresponding editor.
+   - Click **Apply** and **OK** to save your changes.
+
+---
+
 ## 🚀 How to Use
-
-### Setting Up Templates in Android Studio
-
-1. Open **Android Studio**.
-2. Navigate to **File > Settings** (Windows/Linux) or **Android Studio > Preferences** (macOS).
-3. Go to **Editor > File and Code Templates**.
-4. Click the **+** icon to create a new template.
-5. For each template listed above, create a new entry with the specified **Name** and **File Name**.
-
-### Using the Templates
 
 1. In the Project view, right-click on your desired package.
 2. Select **New > Other > [Template Name]**.
