@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Sim Sze Yu
+  ~ GitHub: https://github.com/szeyu/Awsome-Android-Code-Template
+  ~
+  ~ This template is part of the WIA2007 Mobile Application Development Course
+  ~ Bachelor of Computer Science (Artificial Intelligence)
+  ~ Universiti Malaya
+  ~
+  ~ Licensed under MIT License
+  ~ Copyright (c) 2025 Sim Sze Yu
+  ~
+  ~ Overflow menu resource template.
+  ~ Features:
+  ~ - Supports action items and overflow menu
+  ~ - Configurable icons and titles
+  ~ - Easy extension for additional actions
+  ~
+  ~ Usage:
+  ~ 1. Add menu items with appropriate IDs and icons
+  ~ 2. Configure "showAsAction" based on UI needs
+  ~ 3. Implement actions in onOptionsItemSelected()
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Settings option (always visible if space allows) -->
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Settings"
+        app:showAsAction="ifRoom" />
+
+    <!-- Help option (always in overflow menu) -->
+    <item
+        android:id="@+id/action_help"
+        android:icon="@drawable/baseline_help_outline_24"
+        android:title="Help"
+        app:showAsAction="never" />
+
+    <!-- About option (always in overflow menu) -->
+    <item
+        android:id="@+id/action_about"
+        android:icon="@drawable/baseline_info_24"
+        android:title="About"
+        app:showAsAction="never" />
+
+</menu>

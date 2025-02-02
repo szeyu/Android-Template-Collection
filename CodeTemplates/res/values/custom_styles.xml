@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Created by Sim Sze Yu
   ~ GitHub: https://github.com/szeyu/Awsome-Android-Code-Template
   ~
@@ -23,19 +22,28 @@
   ~ 3. Customize as needed
   -->
 <resources>
-    <!-- Text Appearances -->
+    <!-- Base Text Appearance -->
+    <style name="TextAppearance.Custom" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Headline Text Appearance -->
     <style name="TextAppearance.Custom.Headline">
         <item name="android:textSize">@dimen/text_headline</item>
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
+    <!-- Title Text Appearance -->
     <style name="TextAppearance.Custom.Title">
         <item name="android:textSize">@dimen/text_title</item>
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
+    <!-- Body Text Appearance -->
     <style name="TextAppearance.Custom.Body">
         <item name="android:textSize">@dimen/text_body</item>
         <item name="android:textColor">@color/text_secondary</item>
@@ -48,7 +56,6 @@
         <item name="android:minWidth">@dimen/button_min_width</item>
         <item name="android:padding">@dimen/spacing_medium</item>
         <item name="cornerRadius">@dimen/button_corner_radius</item>
-        <item name="android:textAppearance">@style/TextAppearance.Custom.Button</item>
     </style>
 
     <style name="Widget.Custom.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">

@@ -50,6 +50,10 @@ public class ${VIEW_MODEL_NAME} extends AndroidViewModel {
         return allItems;
     }
 
+    public LiveData<${MODEL_NAME}> getItemById(int itemId) {
+        return repository.getItemById(itemId);
+    }
+
     public void insert(${MODEL_NAME} item) {
         repository.insert(item);
     }

@@ -53,6 +53,10 @@ public class ${REPOSITORY_NAME} {
         return allItems;
     }
 
+    public LiveData<List<${MODEL_NAME}>> getItemById(int itemId) {
+        return dao.getItemById(itemId);
+    }
+
     public void insert(${MODEL_NAME} item) {
         executorService.execute(() -> dao.insert(item));
     }

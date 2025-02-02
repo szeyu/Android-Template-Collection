@@ -66,8 +66,9 @@ public class ${ADAPTER_NAME} extends RecyclerView.Adapter<${ADAPTER_NAME}.${VIEW
         return itemList != null ? itemList.size() : 0;
     }
 
-    public void setItemList(List<${MODEL_NAME}> itemList) {
-        this.itemList = itemList;
+    public void setItemList(List<${MODEL_NAME}> newList) {
+        this.itemList.clear();
+        this.itemList.addAll(newList);
         notifyDataSetChanged();
     }
 
@@ -77,11 +78,15 @@ public class ${ADAPTER_NAME} extends RecyclerView.Adapter<${ADAPTER_NAME}.${VIEW
         public ${VIEW_HOLDER_NAME}(View itemView) {
             super(itemView);
             // Initialize your view components
+            textViewTitle = itemView.findViewById(R.id.tv_card_title);
+            textViewSubtitle = itemView.findViewById(R.id.tv_card_subtitle);
         }
 
         public void bind(final ${MODEL_NAME} item, final OnItemClickListener listener) {
             // Bind data to your views
             // Example: textView.setText(item.getTitle());
+            textViewTitle.setText(item.getTitle());
+            textViewSubtitle.setText(item.getSubtitle());
 
             itemView.setOnClickListener(v -> {
                 if (listener != null) {

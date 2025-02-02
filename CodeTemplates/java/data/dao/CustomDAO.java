@@ -49,6 +49,9 @@ public interface ${DAO_NAME} {
     @Delete
     void delete(${MODEL_NAME} item);
 
-    @Query("SELECT * FROM ${TABLE_NAME} ORDER BY timestamp DESC")
+    @Query("SELECT * FROM ${TABLE_NAME}")
     LiveData<List<${MODEL_NAME}>> getAllItems();
+
+    @Query("SELECT * FROM ${TABLE_NAME} WHERE id = :itemId LIMIT 1")
+    LiveData<${MODEL_NAME}> getItemById(int itemId);
 }
