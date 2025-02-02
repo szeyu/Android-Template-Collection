@@ -7,14 +7,9 @@
  * Universiti Malaya
  * 
  * Licensed under MIT License
- * Copyright (c) 2024 Sim Sze Yu
+ * Copyright (c) 2025 Sim Sze Yu
  * 
- * Room Database DAO (Data Access Object) interface template.
- * Features:
- * - Basic CRUD operations
- * - LiveData support for reactive programming
- * - Customizable query methods
- * - Asynchronous database operations
+ * CustomAdapter template.
  */
 
 package ${PACKAGE_NAME};
@@ -74,6 +69,8 @@ public class ${ADAPTER_NAME} extends RecyclerView.Adapter<${ADAPTER_NAME}.${VIEW
 
     public static class ${VIEW_HOLDER_NAME} extends RecyclerView.ViewHolder {
         // Define your view components here
+        private final TextView textViewTitle;
+        private final TextView textViewSubtitle;
 
         public ${VIEW_HOLDER_NAME}(View itemView) {
             super(itemView);

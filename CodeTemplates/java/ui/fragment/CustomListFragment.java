@@ -9,7 +9,7 @@
  * Licensed under MIT License
  * Copyright (c) 2025 Sim Sze Yu
  * 
- * ${FRAGMENT_NAME} Template.
+ * CustomListFragment Template.
  * Features:
  * - Displays a list of ${MODEL_NAME} items using RecyclerView, a ViewModel, and NavigationUtil.
  * - Offers options for different LayoutManagers.
@@ -24,10 +24,8 @@
  *    - ${VIEW_MODEL_CLASS}: Your ViewModel class name (e.g., PersonViewModel)
  *    - ${LAYOUT_RESOURCE}: The layout resource (e.g., R.layout.fragment_people_list)
  *    - ${RECYCLER_VIEW_ID}: The RecyclerView id (e.g., R.id.recycler_view_people)
- *    - ${NAVIGATION_UTIL}: Your navigation utility class (e.g., NavigationUtil)
  *    - ${NAVIGATION_ACTION_ID}: Navigation action id (e.g., R.id.action_peopleListFragment_to_editPersonFragment)
  *    - ${ITEM_ID_KEY}: The key for the item's id in the bundle (e.g., "personId")
- *    - ${MODEL_ID_METHOD}: The method to get the id from the model (e.g., getId)
  * 2. Uncomment the LayoutManager option that you want.
  */
 
@@ -51,7 +49,7 @@
  import ${PACKAGE_NAME}.R;
  import ${PACKAGE_NAME}.model.${MODEL_NAME};
  import ${PACKAGE_NAME}.ui.adapter.${ADAPTER_NAME};
- import ${PACKAGE_NAME}.ui.navigation.${NAVIGATION_UTIL};
+ import ${PACKAGE_NAME}.ui.navigation.NavigationUtil;
  import ${PACKAGE_NAME}.ui.viewModel.${VIEW_MODEL_CLASS};
  
  import java.util.List;
@@ -101,7 +99,7 @@
              // Create a bundle to pass the selected ${MODEL_NAME}'s ID
              Bundle args = new Bundle();
              args.putInt("${ITEM_ID_KEY}", item.getId());
-             ${NAVIGATION_UTIL}.navigateTo(${FRAGMENT_NAME}.this, ${NAVIGATION_ACTION_ID}, args);
+             NavigationUtil.navigateTo(${FRAGMENT_NAME}.this, ${NAVIGATION_ACTION_ID}, args);
          });
          recyclerView.setAdapter(adapter);
  

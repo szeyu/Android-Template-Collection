@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sim Sze Yu
+  ~ GitHub: https://github.com/szeyu/Awsome-Android-Code-Template
+  ~
+  ~ This template is part of the WIA2007 Mobile Application Development Course
+  ~ Bachelor of Computer Science (Artificial Intelligence)
+  ~ Universiti Malaya
+  ~
+  ~ Licensed under MIT License
+  ~ Copyright (c) 2025 Sim Sze Yu
+  ~
+  ~ Custom RecyclerView layout with standard spacing and consistent design.
+  ~ Features:
+  ~ - RecyclerView with ConstraintLayout
+  ~ - Custom list item using person_card_layout
+  ~ - Standard margin and padding
+  ~
+  ~ Usage:
+  ~ 1. Place RecyclerView inside layouts
+  ~ 2. Use with custom adapter and `custom_card_layout` for list items
+  ~ 3. Maintain consistent spacing and design across RecyclerView
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- RecyclerView for displaying list of people -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_people"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/custom_card_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
