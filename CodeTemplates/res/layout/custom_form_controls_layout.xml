@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sim Sze Yu
+  ~ GitHub: https://github.com/szeyu/Awsome-Android-Code-Template
+  ~
+  ~ This template is part of the WIA2007 Mobile Application Development Course
+  ~ Bachelor of Computer Science (Artificial Intelligence)
+  ~ Universiti Malaya
+  ~
+  ~ Licensed under MIT License
+  ~ Copyright (c) 2025 Sim Sze Yu
+  ~
+  ~ Custom form controls layout with Material Design styling.
+  ~ Features:
+  ~ - Styled RadioGroup, CheckBox, Switch, AutoCompleteTextView, Spinner
+  ~ - Uses Material Theme colors and dimensions
+  ~ - Consistent spacing and typography
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_medium"
+    android:background="@color/background">
+
+    <!-- Radio Group -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_small">
+        <RadioButton
+            android:id="@+id/radio1"
+            style="@style/Widget.MaterialComponents.CompoundButton.RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1" />
+        <RadioButton
+            android:id="@+id/radio2"
+            style="@style/Widget.MaterialComponents.CompoundButton.RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2" />
+    </RadioGroup>
+
+    <!-- Checkboxes -->
+    <CheckBox
+        android:id="@+id/checkbox1"
+        style="@style/Widget.MaterialComponents.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check 1" />
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        style="@style/Widget.MaterialComponents.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check 2" />
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        style="@style/Widget.MaterialComponents.CompoundButton.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check 3" />
+
+    <!-- Switch -->
+    <Switch
+        android:id="@+id/toggleSwitch"
+        style="@style/Widget.MaterialComponents.CompoundButton.Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable feature" />
+
+    <!-- AutoCompleteTextView -->
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        style="@style/Widget.Custom.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choose an item" />
+
+    <!-- Spinner -->
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:popupBackground="@color/surface" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        style="@style/Widget.Custom.Button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="Submit" />
+
+</LinearLayout>
