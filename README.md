@@ -70,6 +70,7 @@ C:.
     │   │   │
     │   │   ├───fragment
     │   │   │       CustomListFragment.java  # Fragment displaying a list of items
+    │   │   │       CustomEditModelFragment.java  # Fragment to edit a specific item by ID
     │   │   │
     │   │   ├───navigation
     │   │   │       BottomNavigation.java    # Bottom navigation bar setup
@@ -112,58 +113,105 @@ C:.
                 custom_styles.xml            # Styles and themes
 ```
 
-
-## 📁 Java Templates Overview
-
 ## 📂 Java Templates Overview
 
-| Template                                | Description                                                                                                                                                                                 | Location               |
-|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
-| **CustomNavigatorMainActivity.java**    | Custom main activity template for navigation-based Android applications. Features: Navigation Component setup, Drawer and Bottom Navigation integration, Toolbar, and overflow menu.  | `java`                 |
-| **CustomDAO.java**                      | Room Database DAO interface template with CRUD operations, LiveData support, and ordered queries.                                                                                            | `java/data/dao`        |
-| **CustomDatabase.java**                 | Room Database singleton template with instance management and migration handling.                                                                                                          | `java/data/database`   |
-| **CustomRepository.java**               | Repository pattern implementation with ExecutorService and LiveData management.                                                                                                             | `java/data/repository` |
-| **CustomModel.java**                    | Room Entity model template with a basic data structure and primary key configuration.                                                                                                      | `java/model`           |
-| **CustomAdapter.java**                  | RecyclerView adapter template implementing the ViewHolder pattern. Features click listener interface, data binding functionality, and list management methods.                        | `java/ui/adapter`      |
-| **CustomInfoButton.java**               | Custom ImageButton implementation with Material Design integration and click handling.                                                                                                      | `java/ui/components`   |
-| **CustomListFragment.java**             | Fragment template that displays a list of items using RecyclerView, ViewModel, and NavigationUtil. Supports different LayoutManagers and handles item click navigation.                | `java/ui/fragment`     |
-| **BottomNavigation.java**               | Material Design bottom navigation implementation with pre-configured navigation listener. Supports both fragment-based and intent-based navigation.                                        | `java/ui/navigation`   |
-| **SideMenu.java**                       | Navigation drawer implementation using Material Design NavigationView. Provides menu item handling using NavigationUtil for seamless navigation.                                          | `java/ui/navigation`   |
-| **CustomViewHolder.java**               | RecyclerView ViewHolder template with view binding and data binding methods for efficient view recycling.                                                                                    | `java/ui/viewHolder`   |
-| **CustomViewModel.java**                | AndroidViewModel implementation with repository integration and CRUD operations, facilitating separation of concerns and lifecycle-aware data handling.                                    | `java/ui/viewModel`    |
-| **CustomUtility.java**                  | General utility class template with static helper methods.                                                                                                                                | `java/util`            |
-| **NavigationUtil.java**                 | Utility class for handling navigation throughout the app. Supports fragment-based navigation via NavController and intent-based navigation methods.                                        | `java/util`            |
+### Activity
+| Template                                | Description                                                                                                                                                                                   | Location   |
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| **CustomNavigatorMainActivity.java**    | Custom main activity template for navigation-based Android applications. Features: Navigation Component setup, Drawer and Bottom Navigation integration, Toolbar, and overflow menu.        | `java`     |
 
+### Data
+#### DAO
+| Template            | Description                                                                                                             | Location          |
+|---------------------|-------------------------------------------------------------------------------------------------------------------------|-------------------|
+| **CustomDAO.java**  | Room Database DAO interface template with CRUD operations, LiveData support, and ordered queries.                        | `java/data/dao`   |
+
+#### Database
+| Template                  | Description                                                                                              | Location             |
+|---------------------------|----------------------------------------------------------------------------------------------------------|----------------------|
+| **CustomDatabase.java**   | Room Database singleton template with instance management and migration handling.                       | `java/data/database` |
+
+#### Repository
+| Template                        | Description                                                                                                     | Location               |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------|
+| **CustomRepository.java**       | Repository pattern implementation with ExecutorService and LiveData management.                                 | `java/data/repository` |
+
+### Model
+| Template                        | Description                                                                                                       | Location       |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------|----------------|
+| **CustomModel.java**            | Room Entity model template with a basic data structure and primary key configuration.                              | `java/model`   |
+
+### UI
+#### Adapter
+| Template                         | Description                                                                                                              | Location         |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------|------------------|
+| **CustomAdapter.java**           | RecyclerView adapter template implementing the ViewHolder pattern, click listener interface, data binding, and list management methods.   | `java/ui/adapter` |
+
+#### Components
+| Template                         | Description                                                                                                              | Location          |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------|-------------------|
+| **CustomInfoButton.java**        | Custom ImageButton implementation with Material Design integration and click handling.                                  | `java/ui/components` |
+
+#### Fragment
+| Template                           | Description                                                                                                                                               | Location          |
+|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
+| **CustomListFragment.java**         | Fragment template that displays a list of items using RecyclerView, ViewModel, and NavigationUtil. Supports different LayoutManagers and item click navigation. | `java/ui/fragment` |
+| **CustomEditModelFragment.java**    | Fragment template for editing a specific model entity by ID. Integrates ViewModel for data binding and form validation, using NavigationUtil for navigation.           | `java/ui/fragment` |
+
+#### Navigation
+| Template                         | Description                                                                                                                  | Location             |
+|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| **BottomNavigation.java**         | Material Design bottom navigation implementation with pre-configured navigation listener. Supports both fragment-based and intent-based navigation.      | `java/ui/navigation` |
+| **SideMenu.java**                | Navigation drawer implementation using Material Design NavigationView. Provides menu item handling using NavigationUtil for seamless navigation.         | `java/ui/navigation` |
+
+#### ViewHolder
+| Template                         | Description                                                                                                                | Location           |
+|----------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------|
+| **CustomViewHolder.java**         | RecyclerView ViewHolder template with view binding and data binding methods for efficient view recycling.                     | `java/ui/viewHolder` |
+
+#### ViewModel
+| Template                         | Description                                                                                                                    | Location           |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------|--------------------|
+| **CustomEntityViewModel.java**    | AndroidViewModel implementation with repository integration and CRUD operations for lifecycle-aware data handling.                | `java/ui/viewModel` |
+
+### Util
+| Template                          | Description                                                                                                  | Location     |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------|--------------|
+| **AppStorageUtil.java**           | Utilities for app storage management.                                                                       | `java/util`  |
+| **DiskCacheUtil.java**            | Utility class for managing disk caching.                                                                    | `java/util`  |
+| **HybridCacheUtil.java**          | Utility that combines disk and memory caching strategies.                                                   | `java/util`  |
+| **MemoryCacheUtil.java**          | In-memory cache utilities for quick data retrieval.                                                         | `java/util`  |
+| **NavigationUtil.java**           | Utility class for handling navigation throughout the app. Supports fragment-based (NavController) and intent-based navigation methods. | `java/util`  |
+| **PreferenceManagerUtil.java**    | Utilities for managing user preferences.                                                                    | `java/util`  |
+| **SharedPrefsUtil.java**          | Helper class for working with SharedPreferences.                                                            | `java/util`  |
 
 ## 📂 XML Templates Overview
 
 ### Layouts
-
-| Template                                 | Description                                                                                                                 |
-|------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| **custom_login_layout.xml**              | Material Design login screen with email and password fields.                                                               |
-| **custom_bottom_nav_layout.xml**         | Layout for bottom navigation integrated with a fragment container.                                                         |
-| **custom_side_nav_layout.xml**           | Layout for a navigation drawer with header and menu items.                                                                 |
-| **custom_card_layout.xml**               | Material card layout with image, title, and subtitle.                                                                       |
-| **custom_button_layout.xml**             | Layout showcasing various Material button styles.                                                                           |
-| **custom_toolbar_layout.xml**            | Custom toolbar layout with title and menu support.                                                                         |
-| **custom_navigator_main_activity.xml**   | Layout for CustomNavigatorMainActivity, including AppBarLayout with Toolbar, FragmentContainerView, BottomNavigationView, and NavigationView for side menu. |
+| Template                                | Description                                                                                                                                     | Location      |
+|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| **custom_login_layout.xml**             | Material Design login screen with email and password fields.                                                                                    | `res/layout`  |
+| **custom_bottom_nav_layout.xml**        | Layout for bottom navigation integrated with a fragment container.                                                                              | `res/layout`  |
+| **custom_side_nav_layout.xml**          | Layout for a navigation drawer with header and menu items.                                                                                      | `res/layout`  |
+| **custom_card_layout.xml**              | Material card layout with image, title, and subtitle.                                                                                           | `res/layout`  |
+| **custom_button_layout.xml**            | Layout showcasing various Material button styles.                                                                                              | `res/layout`  |
+| **custom_toolbar_layout.xml**           | Custom toolbar layout with title and menu support.                                                                                             | `res/layout`  |
+| **custom_navigator_main_activity.xml**  | Layout for CustomNavigatorMainActivity, including AppBarLayout with Toolbar, FragmentContainerView, BottomNavigationView, and NavigationView for side menu. | `res/layout`  |
+| **custom_edit_model_layout.xml**        | Layout for editing a model entity (e.g., for CustomEditModelFragment).                                                                          | `res/layout`  |
 
 ### Menus
-
-| Template                           | Description                                                                                                    |
-|------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| **custom_bottom_nav_menu.xml**     | Menu resource for bottom navigation items.                                                                    |
-| **custom_main_nav_menu.xml**       | Menu resource for the overflow menu in CustomNavigatorMainActivity.                                            |
-| **custom_side_nav_menu.xml**       | Menu resource for navigation drawer items.                                                                     |
+| Template                             | Description                                                             | Location     |
+|--------------------------------------|-------------------------------------------------------------------------|--------------|
+| **custom_bottom_nav_menu.xml**       | Menu resource for bottom navigation items.                              | `res/menu`   |
+| **custom_main_nav_menu.xml**         | Menu resource for the overflow menu in CustomNavigatorMainActivity.       | `res/menu`   |
+| **custom_side_nav_menu.xml**         | Menu resource for navigation drawer items.                              | `res/menu`   |
 
 ### Values
-
-| Template                   | Description                                  |
-|----------------------------|----------------------------------------------|
-| **custom_colors.xml**      | Material Design color system.                |
-| **custom_dimes.xml**       | Standard dimensions and spacing.             |
-| **custom_styles.xml**      | Material component styles and themes.        |
+| Template                             | Description                                      | Location     |
+|--------------------------------------|--------------------------------------------------|--------------|
+| **custom_colors.xml**                | Material Design color system resources.          | `res/values` |
+| **custom_dimes.xml**                 | Standard dimensions and spacing definitions.     | `res/values` |
+| **custom_styles.xml**                | Material component styles and themes.            | `res/values` |
 
 
 ## Getting Started
