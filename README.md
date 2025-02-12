@@ -121,20 +121,12 @@ C:.
 | **CustomNavigatorMainActivity.java**    | Custom main activity template for navigation-based Android applications. Features: Navigation Component setup, Drawer and Bottom Navigation integration, Toolbar, and overflow menu.        | `java`     |
 
 ### Data
-#### DAO
-| Template            | Description                                                                                                             | Location          |
-|---------------------|-------------------------------------------------------------------------------------------------------------------------|-------------------|
-| **CustomDAO.java**  | Room Database DAO interface template with CRUD operations, LiveData support, and ordered queries.                        | `java/data/dao`   |
 
-#### Database
-| Template                  | Description                                                                                              | Location             |
-|---------------------------|----------------------------------------------------------------------------------------------------------|----------------------|
-| **CustomDatabase.java**   | Room Database singleton template with instance management and migration handling.                       | `java/data/database` |
-
-#### Repository
-| Template                        | Description                                                                                                     | Location               |
-|---------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------|
-| **CustomRepository.java**       | Repository pattern implementation with ExecutorService and LiveData management.                                 | `java/data/repository` |
+|| Template            | Description                                                                                                             | Location          |
+|-|---------------------|-------------------------------------------------------------------------------------------------------------------------|-------------------|
+|DAO| **CustomDAO.java**  | Room Database DAO interface template with CRUD operations, LiveData support, and ordered queries.                        | `java/data/dao`   |
+|Database| **CustomDatabase.java**   | Room Database singleton template with instance management and migration handling.                       | `java/data/database` |
+|Repository| **CustomRepository.java**       | Repository pattern implementation with ExecutorService and LiveData management.                                 | `java/data/repository` |
 
 ### Model
 | Template                        | Description                                                                                                       | Location       |
@@ -142,37 +134,17 @@ C:.
 | **CustomModel.java**            | Room Entity model template with a basic data structure and primary key configuration.                              | `java/model`   |
 
 ### UI
-#### Adapter
-| Template                         | Description                                                                                                              | Location         |
-|----------------------------------|--------------------------------------------------------------------------------------------------------------------------|------------------|
-| **CustomAdapter.java**           | RecyclerView adapter template implementing the ViewHolder pattern, click listener interface, data binding, and list management methods.   | `java/ui/adapter` |
 
-#### Components
-| Template                         | Description                                                                                                              | Location          |
-|----------------------------------|--------------------------------------------------------------------------------------------------------------------------|-------------------|
-| **CustomInfoButton.java**        | Custom ImageButton implementation with Material Design integration and click handling.                                  | `java/ui/components` |
-
-#### Fragment
-| Template                           | Description                                                                                                                                               | Location          |
-|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| **CustomListFragment.java**         | Fragment template that displays a list of items using RecyclerView, ViewModel, and NavigationUtil. Supports different LayoutManagers and item click navigation. | `java/ui/fragment` |
-| **CustomEditModelFragment.java**    | Fragment template for editing a specific model entity by ID. Integrates ViewModel for data binding and form validation, using NavigationUtil for navigation.           | `java/ui/fragment` |
-
-#### Navigation
-| Template                         | Description                                                                                                                  | Location             |
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| **BottomNavigation.java**         | Material Design bottom navigation implementation with pre-configured navigation listener. Supports both fragment-based and intent-based navigation.      | `java/ui/navigation` |
-| **SideMenu.java**                | Navigation drawer implementation using Material Design NavigationView. Provides menu item handling using NavigationUtil for seamless navigation.         | `java/ui/navigation` |
-
-#### ViewHolder
-| Template                         | Description                                                                                                                | Location           |
-|----------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------|
-| **CustomViewHolder.java**         | RecyclerView ViewHolder template with view binding and data binding methods for efficient view recycling.                     | `java/ui/viewHolder` |
-
-#### ViewModel
-| Template                         | Description                                                                                                                    | Location           |
-|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------|--------------------|
-| **CustomEntityViewModel.java**    | AndroidViewModel implementation with repository integration and CRUD operations for lifecycle-aware data handling.                | `java/ui/viewModel` |
+|| Template                         | Description                                                                                                              | Location         |
+|-|----------------------------------|--------------------------------------------------------------------------------------------------------------------------|------------------|
+|Adapter| **CustomAdapter.java**           | RecyclerView adapter template implementing the ViewHolder pattern, click listener interface, data binding, and list management methods.   | `java/ui/adapter` |
+|Components| **CustomInfoButton.java**        | Custom ImageButton implementation with Material Design integration and click handling.                                  | `java/ui/components` |
+|Fragment| **CustomListFragment.java**         | Fragment template that displays a list of items using RecyclerView, ViewModel, and NavigationUtil. Supports different LayoutManagers and item click navigation. | `java/ui/fragment` |
+|| **CustomEditModelFragment.java**    | Fragment template for editing a specific model entity by ID. Integrates ViewModel for data binding and form validation, using NavigationUtil for navigation.           | `java/ui/fragment` |
+|Navigation| **BottomNavigation.java**         | Material Design bottom navigation implementation with pre-configured navigation listener. Supports both fragment-based and intent-based navigation.      | `java/ui/navigation` |
+|| **SideMenu.java**                | Navigation drawer implementation using Material Design NavigationView. Provides menu item handling using NavigationUtil for seamless navigation.         | `java/ui/navigation` |
+|ViewHolder| **CustomViewHolder.java**         | RecyclerView ViewHolder template with view binding and data binding methods for efficient view recycling.                     | `java/ui/viewHolder` |
+|ViewModel| **CustomEntityViewModel.java**    | AndroidViewModel implementation with repository integration and CRUD operations for lifecycle-aware data handling.                | `java/ui/viewModel` |
 
 ### Util
 | Template                          | Description                                                                                                  | Location     |
