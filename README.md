@@ -66,6 +66,7 @@ C:.
     │   │   │       CustomAdapter.java       # RecyclerView adapter implementation
     │   │   │
     │   │   ├───components
+    │   │   │       CustomFormControls.java    # A collection of form control component logic
     │   │   │       CustomInfoButton.java    # Custom button component
     │   │   │
     │   │   ├───fragment
@@ -138,7 +139,8 @@ C:.
 || Template                         | Description                                                                                                              | Location         |
 |-|----------------------------------|--------------------------------------------------------------------------------------------------------------------------|------------------|
 |Adapter| **CustomAdapter.java**           | RecyclerView adapter template implementing the ViewHolder pattern, click listener interface, data binding, and list management methods.   | `java/ui/adapter` |
-|Components| **CustomInfoButton.java**        | Custom ImageButton implementation with Material Design integration and click handling.                                  | `java/ui/components` |
+|Components| **CustomFormControls.java**        | Implemented with varieties of form control component code including, radio, checkbox, switch, autocomplete text view, spinner dropdown and button                                  | `java/ui/components` |
+|| **CustomInfoButton.java**        | Custom ImageButton implementation with Material Design integration and click handling.                                  | `java/ui/components` |
 |Fragment| **CustomListFragment.java**         | Fragment template that displays a list of items using RecyclerView, ViewModel, and NavigationUtil. Supports different LayoutManagers and item click navigation. | `java/ui/fragment` |
 || **CustomEditModelFragment.java**    | Fragment template for editing a specific model entity by ID. Integrates ViewModel for data binding and form validation, using NavigationUtil for navigation.           | `java/ui/fragment` |
 |Navigation| **BottomNavigation.java**         | Material Design bottom navigation implementation with pre-configured navigation listener. Supports both fragment-based and intent-based navigation.      | `java/ui/navigation` |
@@ -169,7 +171,8 @@ C:.
 | **custom_button_layout.xml**            | Layout showcasing various Material button styles.                                                                                              | `res/layout`  |
 | **custom_toolbar_layout.xml**           | Custom toolbar layout with title and menu support.                                                                                             | `res/layout`  |
 | **custom_navigator_main_activity.xml**  | Layout for CustomNavigatorMainActivity, including AppBarLayout with Toolbar, FragmentContainerView, BottomNavigationView, and NavigationView for side menu. | `res/layout`  |
-| **custom_edit_model_layout.xml**        | Layout for editing a model entity (e.g., for CustomEditModelFragment).                                                                          | `res/layout`  |
+| **custom_form_controls_layout.xml**        | Layout for which consists of variety of component for form control.                                                                          | `res/layout`  |
+| **custom_list_recycler_view_layout.xml**        | Custom RecyclerView layout with standard spacing and consistent design.                                                                           | `res/layout`  |
 
 ### Menus
 | Template                             | Description                                                             | Location     |
